@@ -4,11 +4,9 @@ import styles from './CategoryListItemStyle.js'
 
 export default function CategoryListItem(props) {
   return (
-  <View>
-    <View style={ styles.categoryView }>
-      <Text style={ styles.categoryText }> {props.category.title} </Text>
-      <Image source={props.category.image} style={styles.categoryImage}></Image>
-    </View>
+  <View style={ styles.categoryView }>
+    <Text style={ styles.categoryText }> {props.category.title} </Text>
+    <Image source={props.category.image} style={styles.categoryImage}></Image>
   </View>
   )
 }
