@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, FlatList, Alert } from 'react-native';
+import { StyleSheet, View, FlatList } from 'react-native';
 import CategoryListItem from '../components/CategoryListItem'
 
 import BaseballCap from '../assets/baseball-cap.png'
@@ -35,10 +35,10 @@ export default class Categories extends React.Component {
         <FlatList
           data={categories}
           renderItem={ ({item}) => 
-            <CategoryListItem
-              category={item}
-              onPress={() => navigation.navigate('Category') }
-            /> }
+          <CategoryListItem
+            category={item} 
+            onPress={() => navigation.navigate('Category') }
+          /> }
           keyExtractor={ item => `${item.id}` }
           contentContainerStyle={styles.scrollView}
         />
@@ -48,9 +48,6 @@ export default class Categories extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  categoryEmpty: {
-    textAlign: 'center'
-  },
   scrollView: {
     paddingLeft: 10,
     paddingRight: 10
