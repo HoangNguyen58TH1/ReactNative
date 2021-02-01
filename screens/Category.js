@@ -24,12 +24,27 @@ export default class Category extends React.Component {
 
     return (
       <View style={styles.viewContainer}>
+
         <View style={styles.categoryView}>
           <Text style={styles.categoryTitle}>{title}</Text>
           <Text style={styles.categoryDescription}>{description}</Text>
-          <Image source={image} style={styles.categoryImage}></Image>
-          <Text style={styles.categoryPrice}>Price: {price}</Text>
+          <Image source={image[0]} style={styles.categoryImage}></Image>
+          <View style={styles.viewPrice}>
+            <Text style={styles.categoryPrice}>Price: {price}</Text>
+            <Text>Buy +</Text>
+          </View>
         </View>
+
+        <View style={styles.categoryView}>
+          <Text style={styles.categoryTitle}>{title}</Text>
+          <Text style={styles.categoryDescription}>{description}</Text>
+          <Image source={image[1]} style={styles.categoryImage}></Image>
+          <View style={styles.viewPrice}>
+            <Text style={styles.categoryPrice}>Price: {price}</Text>
+            <Text>Buy +</Text>
+          </View>
+        </View>
+
       </View>
     );
   }
@@ -37,11 +52,10 @@ export default class Category extends React.Component {
 
 const styles = StyleSheet.create({
   viewContainer: {
-    flex: 1,
+    flexDirection: 'row',
     justifyContent: 'center',
-    backgroundColor: '#fff',
-    margin: 10,
-    padding: 15,
+    margin: 5,
+    padding: 5,
     shadowColor: "#000000",
     shadowOpacity: 0.2,
     shadowRadius: 4,
@@ -51,28 +65,37 @@ const styles = StyleSheet.create({
     }
   },
   categoryView: {
+    flex: 1,
     alignItems: "center",
+    backgroundColor: '#fff',
+    margin: 5,
+    padding: 5
   },
   categoryTitle: {
-    fontSize: 25,
+    fontSize: 16,
     textAlign: "center",
     fontWeight: "bold",
     textTransform: 'uppercase',
-    marginBottom: 15
+    marginBottom: 10
   },
   categoryDescription: {
-    fontSize: 18,
+    fontSize: 13,
     textAlign: "center",
-    marginBottom: 15,
+    marginBottom: 10,
     paddingHorizontal: 15
   },
   categoryImage: {
-    width: 140,
-    height: 140,
-    marginBottom: 15,
+    width: 60,
+    height: 60,
+    marginBottom: 10,
   },
   categoryPrice: {
-    fontSize: 20,
-    textAlign: "center"
+    fontSize: 14,
+    textAlign: "center",
   },
+  viewPrice: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '90%'
+  }
 })
