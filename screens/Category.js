@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, FlatList } from 'react-native';
+import axios from 'axios';
 
 export default class Category extends React.Component {
   static navigationOptions = ( {navigation} ) => {
@@ -15,35 +16,48 @@ export default class Category extends React.Component {
     };
   }
 
-  render() {
+  constructor() {
+    super();
+    this.state = {
+      category: [],
+    }
+  }
+
+  componentDidMount() {
     const { navigation } = this.props;
-    const title = navigation.getParam('title', 'no value');
-    const image = navigation.getParam('image', 'no value');
-    const description = navigation.getParam('description', 'no value');
-    const price = navigation.getParam('price', 'no value');
+    const category_id = navigation.getParam('id', 'no value');
+    axios.get(`https://3ba274547619.ngrok.io/products?category=${category_id}`)
+      .then(res => {
+        this.setState({
+          category: res.data
+        })
+      })
+      .catch(error => {
+        console.error(error);
+      })
+  }
+
+  render() {
+    const { category } = this.state;
 
     return (
       <View style={styles.viewContainer}>
 
-        <View style={styles.categoryView}>
-          <Text style={styles.categoryTitle}>{title}</Text>
-          <Text style={styles.categoryDescription}>{description}</Text>
-          <Image source={image[0]} style={styles.categoryImage}></Image>
-          <View style={styles.viewPrice}>
-            <Text style={styles.categoryPrice}>Price: {price}</Text>
-            <Text>Buy +</Text>
+        <FlatList
+          data={category}
+          renderItem={ ({item}) => 
+          <View style={styles.categoryView}>
+            <Text style={styles.categoryTitle}>{item.title}</Text>
+            <Text style={styles.categoryDescription}>{item.description}</Text>
+            <Image source={{uri: item.images[0].url}} style={styles.categoryImage}></Image>
+            <View style={styles.viewPrice}>
+              <Text style={styles.categoryPrice}>Price: {item.price}</Text>
+              <Text>Buy +</Text>
+            </View>
           </View>
-        </View>
-
-        <View style={styles.categoryView}>
-          <Text style={styles.categoryTitle}>{title}</Text>
-          <Text style={styles.categoryDescription}>{description}</Text>
-          <Image source={image[1]} style={styles.categoryImage}></Image>
-          <View style={styles.viewPrice}>
-            <Text style={styles.categoryPrice}>Price: {price}</Text>
-            <Text>Buy +</Text>
-          </View>
-        </View>
+          }
+          keyExtractor={ item => `${item.id}` }
+        />
 
       </View>
     );

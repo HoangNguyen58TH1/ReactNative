@@ -1,0 +1,132 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "BaseballCap",
+      "image": "https://i.ibb.co/yRNyZ5b/baseball-cap.png"
+    },
+    {
+      "id": 2,
+      "title": "Tshirt",
+      "image": "https://i.ibb.co/5TGpPn3/tshirt.png"
+    },
+    {
+      "id": 3,
+      "title": "Pants",
+      "image": "https://i.ibb.co/0Mp25Bq/pants.png"
+    },
+    {
+      "id": 4,
+      "title": "Belt",
+      "image": "https://i.ibb.co/vcz32Sq/belt.png"
+    },
+    {
+      "id": 5,
+      "title": "Sneakers",
+      "image": "https://i.ibb.co/hm5DDHF/sneakers.png"
+    },
+    {
+      "id": 6,
+      "title": "Socks",
+      "image": "https://i.ibb.co/JCJftxf/socks.png"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "images": [
+        {
+          "url": "https://i.ibb.co/yRNyZ5b/baseball-cap.png"
+        }
+      ],
+      "title": "BaseballCap",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 10000,
+      "category": 1
+    },
+    {
+      "id": 7,
+      "images": [
+        {
+          "url": "https://i.ibb.co/yRNyZ5b/baseball-cap.png"
+        }
+      ],
+      "title": "BaseballCap",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 10000,
+      "category": 1
+    },
+    {
+      "id": 8,
+      "images": [
+        {
+          "url": "https://i.ibb.co/yRNyZ5b/baseball-cap.png"
+        }
+      ],
+      "title": "BaseballCap",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 10000,
+      "category": 1
+    },
+    {
+      "id": 2,
+      "images": [
+        {
+          "url": "https://i.ibb.co/5TGpPn3/tshirt.png"
+        }
+      ],
+      "title": "Tshirt",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 20000,
+      "category": 2
+    },
+    {
+      "id": 3,
+      "images": [
+        {
+          "url": "https://i.ibb.co/0Mp25Bq/pants.png"
+        }
+      ],
+      "title": "Pants",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 30000,
+      "category": 3
+    },
+    {
+      "id": 4,
+      "images": [
+        {
+          "url": "https://i.ibb.co/vcz32Sq/belt.png"
+        }
+      ],
+      "title": "Belt",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 40000,
+      "category": 4
+    },
+    {
+      "id": 5,
+      "images": [
+        {
+          "url": "https://i.ibb.co/hm5DDHF/sneakers.png"
+        }
+      ],
+      "title": "Sneakers",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 50000,
+      "category": 5
+    },
+    {
+      "id": 6,
+      "images": [
+        {
+          "url": "https://i.ibb.co/JCJftxf/socks.png"
+        }
+      ],
+      "title": "Socks",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 60000,
+      "category": 6
+    }
+  ]
+}
