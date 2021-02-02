@@ -45,31 +45,31 @@
       "category": 1
     },
     {
-      "id": 7,
-      "images": [
-        {
-          "url": "https://i.ibb.co/yRNyZ5b/baseball-cap.png"
-        }
-      ],
-      "title": "BaseballCap",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
-      "price": 10000,
-      "category": 1
-    },
-    {
-      "id": 8,
-      "images": [
-        {
-          "url": "https://i.ibb.co/yRNyZ5b/baseball-cap.png"
-        }
-      ],
-      "title": "BaseballCap",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
-      "price": 10000,
-      "category": 1
-    },
-    {
       "id": 2,
+      "images": [
+        {
+          "url": "https://i.ibb.co/Nj3gngt/cap.png"
+        }
+      ],
+      "title": "BaseballCap",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 10000,
+      "category": 1
+    },
+    {
+      "id": 3,
+      "images": [
+        {
+          "url": "https://i.ibb.co/jLGj48c/cap-1.png"
+        }
+      ],
+      "title": "BaseballCap",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 10000,
+      "category": 1
+    },
+    {
+      "id": 4,
       "images": [
         {
           "url": "https://i.ibb.co/5TGpPn3/tshirt.png"
@@ -81,7 +81,31 @@
       "category": 2
     },
     {
-      "id": 3,
+      "id": 5,
+      "images": [
+        {
+          "url": "https://i.ibb.co/rc7tqQx/TShirt-2.png"
+        }
+      ],
+      "title": "Tshirt",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 20000,
+      "category": 2
+    },
+    {
+      "id": 6,
+      "images": [
+        {
+          "url": "https://i.ibb.co/7npKvtv/baby-clothes.png"
+        }
+      ],
+      "title": "Tshirt",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 20000,
+      "category": 2
+    },
+    {
+      "id": 7,
       "images": [
         {
           "url": "https://i.ibb.co/0Mp25Bq/pants.png"
@@ -93,7 +117,31 @@
       "category": 3
     },
     {
-      "id": 4,
+      "id": 8,
+      "images": [
+        {
+          "url": "https://i.ibb.co/KsHpwxS/pants-2.png"
+        }
+      ],
+      "title": "Pants",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 30000,
+      "category": 3
+    },
+    {
+      "id": 9,
+      "images": [
+        {
+          "url": "https://i.ibb.co/nQxCCvR/pants-3.png"
+        }
+      ],
+      "title": "Pants",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 30000,
+      "category": 3
+    },
+    {
+      "id": 10,
       "images": [
         {
           "url": "https://i.ibb.co/vcz32Sq/belt.png"
@@ -105,7 +153,31 @@
       "category": 4
     },
     {
-      "id": 5,
+      "id": 11,
+      "images": [
+        {
+          "url": "https://i.ibb.co/rF9SFwm/belt-2.png"
+        }
+      ],
+      "title": "Belt",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 40000,
+      "category": 4
+    },
+    {
+      "id": 12,
+      "images": [
+        {
+          "url": "https://i.ibb.co/sbx96z5/boxing.png"
+        }
+      ],
+      "title": "Belt",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 40000,
+      "category": 4
+    },
+    {
+      "id": 13,
       "images": [
         {
           "url": "https://i.ibb.co/hm5DDHF/sneakers.png"
@@ -117,10 +189,58 @@
       "category": 5
     },
     {
-      "id": 6,
+      "id": 14,
+      "images": [
+        {
+          "url": "https://i.ibb.co/FnLqZmp/sneakers-2.png"
+        }
+      ],
+      "title": "Sneakers",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 50000,
+      "category": 5
+    },
+    {
+      "id": 15,
+      "images": [
+        {
+          "url": "https://i.ibb.co/hyQSJs1/sneakers-3.png"
+        }
+      ],
+      "title": "Sneakers",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 50000,
+      "category": 5
+    },
+    {
+      "id": 16,
       "images": [
         {
           "url": "https://i.ibb.co/JCJftxf/socks.png"
+        }
+      ],
+      "title": "Socks",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 60000,
+      "category": 6
+    },
+    {
+      "id": 17,
+      "images": [
+        {
+          "url": "https://i.ibb.co/Qb0Rz22/socks-2.png"
+        }
+      ],
+      "title": "Socks",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+      "price": 60000,
+      "category": 6
+    },
+    {
+      "id": 18,
+      "images": [
+        {
+          "url": "https://i.ibb.co/fdmRT63/socks-3.png"
         }
       ],
       "title": "Socks",
