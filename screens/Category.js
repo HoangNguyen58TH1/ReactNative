@@ -26,7 +26,7 @@ export default class Category extends React.Component {
   componentDidMount() {
     const { navigation } = this.props;
     const category_id = navigation.getParam('id', 'no value');
-    axios.get(`https://3ba274547619.ngrok.io/products?category=${category_id}`)
+    axios.get(`/products?category=${category_id}`)
       .then(res => {
         this.setState({
           category: res.data

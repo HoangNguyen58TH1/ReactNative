@@ -17,7 +17,7 @@ export default class Categories extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('https://3ba274547619.ngrok.io/categories')
+    axios.get('/categories')
       .then(res => {
         this.setState({
           categories: res.data
