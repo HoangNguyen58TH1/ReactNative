@@ -7,6 +7,8 @@ import Cart from './screens/Cart'
 import Orders from './screens/Orders'
 import Settings from './screens/Settings'
 import Icon from 'react-native-vector-icons/Ionicons';
+import Login from './screens/Login'
+import SignIn from './screens/SignIn'
 
 const color = {
   ACTIVE: "tomato",
@@ -35,7 +37,6 @@ const CartStack = createStackNavigator({ Cart })
 CartStack.navigationOptions = {
   tabBarLabel: 'Cart',
   tabBarIcon: ({ focused }) => {
-    console.log('focused:', focused)
     return <Icon name="cart"
     size={36}
     color={ focused ? color.ACTIVE : color.INACTIVE }
@@ -77,11 +78,30 @@ SettingsStack.navigationOptions = {
   },
 }
 
+const LoginStack = createStackNavigator({ Login, SignIn })
+LoginStack.navigationOptions = {
+  tabBarLabel: 'Login',
+  tabBarIcon: ({ focused }) => {
+    return <Icon name="log-in"
+    size={36}
+    color={ focused ? color.ACTIVE : color.INACTIVE }
+    />
+  },
+  tabBarOptions: {
+    activeTintColor: 'tomato',
+    inactiveTintColor: '#ff00b4'
+  }
+}
+
 const AppNavigator = createBottomTabNavigator({
-  CategoryStack,
-  CartStack,
-  OrdersStack,
-  SettingsStack
-})
+    CategoryStack,
+    CartStack,
+    OrdersStack,
+    SettingsStack,
+    LoginStack
+  },
+  {
+    initialRouteName: "LoginStack"
+  })
 
 export default AppNavigator;
